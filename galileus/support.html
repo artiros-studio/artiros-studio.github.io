@@ -1,0 +1,183 @@
+<!doctype html>
+<!--
+  Galileus support page (Galileus by Artiros; Artiros is the studio name, not a company).
+  Published at https://artiros-studio.github.io/galileus/support.html from this file by scripts/publish_pages.sh: edit it here, then publish.
+  No home address, phone number or personal email on this page.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Galileus Support</title>
+<meta name="description" content="Help with Galileus: getting books, choosing an edition, searching, Apple Watch, storage and common questions.">
+<link rel="canonical" href="https://artiros-studio.github.io/galileus/support.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  .brand-mark { width: 1.45em; height: 1.45em; vertical-align: -0.38em; margin-right: 8px; color: #011f5b; }
+  .brand-logo { height: 56px; width: auto; color: #011f5b; margin-bottom: 18px; }
+  @media (prefers-color-scheme: dark) { .brand-mark, .brand-logo { color: #f2f2f4; } }
+  :root {
+    --bg: #ffffff;
+    --surface: #f4f6fa;
+    --text: #1d1d1f;
+    --muted: #5a5f6b;
+    --accent: #011f5b;
+    --border: #dfe3ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111316;
+      --surface: #1b1e23;
+      --text: #f2f2f4;
+      --muted: #a4a9b4;
+      --accent: #6e9ceb;
+      --border: #2c3038;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 20px 56px; }
+  header { margin-bottom: 28px; }
+  .app { color: var(--accent); font-weight: 700; letter-spacing: 0.02em; margin: 0 0 6px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.25rem; margin: 36px 0 10px; color: var(--accent); }
+  h3 { font-size: 1.05rem; margin: 22px 0 6px; }
+  p, li { margin: 0 0 12px; overflow-wrap: break-word; }
+  ul, ol { padding-left: 1.25em; margin: 0 0 12px; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 0 0 12px;
+  }
+  .card p:last-child, .card ul:last-child, .card ol:last-child { margin-bottom: 0; }
+  nav.toc { font-size: 0.95rem; }
+  nav.toc a { display: inline-block; margin: 0 14px 6px 0; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 0.9rem; }
+  footer a { margin-right: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="app"><svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="38" stroke="#6E9CEB" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M50,6 Q56,47 94,50 Q56,53 50,94 Q44,53 6,50 Q44,47 50,6 Z" fill="currentColor"/>
+<circle cx="78.24" cy="24.57" r="5.8" fill="#F2A55C"/></svg>Galileus by Artiros</p>
+    <h1>Support</h1>
+    <p class="muted">An offline reader for Wikipedia and other reference libraries, for iPhone, iPad and Mac, with an Apple Watch app.</p>
+    <nav class="toc" aria-label="On this page">
+      <a href="#about">About</a><a href="#books">Getting books</a><a href="#editions">Choosing an edition</a><a href="#search">Search</a><a href="#watch">Apple Watch</a><a href="#storage">Storage</a><a href="#faq">Questions</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <h2 id="about">What Galileus is</h2>
+  <p>Galileus reads ZIM files, the open file format of the openZIM project for offline copies of Wikipedia, dictionaries, travel guides, public-domain books and other reference works. Download a book once, then read and search it with no internet connection. Galileus comes with no books: you download them inside the app from an online catalog of ZIM books, or open .zim files you already have.</p>
+  <p>Galileus runs on iPhone with iOS 27 or later, iPad with iPadOS 27 or later, and Macs with Apple silicon running macOS 27 or later. The Apple Watch app needs watchOS 26 or later and a paired iPhone with Galileus, which sends it the books.</p>
+  <h3>Where things are</h3>
+  <ul>
+    <li><strong>iPhone:</strong> the main list holds Home, My Books, Catalog, Downloads, Bookmarks, History, your books and, at the end, Settings.</li>
+    <li><strong>iPad and Mac:</strong> the same items in the sidebar. On a Mac, Settings is in the Galileus menu, or Command comma.</li>
+  </ul>
+
+  <h2 id="books">Getting books</h2>
+  <h3>From the catalog</h3>
+  <ol>
+    <li>Open <strong>Catalog</strong>. Choose a language and a category, or search the catalog by name.</li>
+    <li>Tap <strong>Get</strong> next to a book. The size is shown before you start, and Galileus checks that it fits, keeping 1 GB of free space.</li>
+    <li>When the download ends, tap <strong>Open</strong>. The book also appears in My Books.</li>
+  </ol>
+  <p>A paused or interrupted download resumes where it stopped: open <strong>Downloads</strong> and tap Resume. On iPhone and iPad, downloads run while Galileus is open, and the screen stays on during a download. If you leave the app, the download pauses and the part already received is kept.</p>
+  <h3>From a file you already have</h3>
+  <ul>
+    <li>In My Books, choose <strong>Open a ZIM File</strong>, or drop .zim files on the window (Mac and iPad).</li>
+    <li>On a Mac, you can also open a .zim file with Galileus from Finder (File &gt; Open With &gt; Galileus).</li>
+    <li>To copy a book to an iPhone or iPad from a Mac, connect the device, select it in Finder, open its Files tab and drag the .zim file onto Galileus. You can also copy books into Galileus with the Files app. Galileus finds them the next time you come back to it.</li>
+  </ul>
+  <p>Books you open from another folder, iCloud Drive or an external drive are read where they are, never copied.</p>
+
+  <h2 id="editions">Choosing an edition</h2>
+  <p>Wikipedia comes in several editions for each language, and the catalog shows the edition next to each title:</p>
+  <ul>
+    <li><strong>maxi:</strong> complete articles with their pictures. The complete English Wikipedia with pictures is over 100 GB: best on a Mac, or on an iPad with an external drive.</li>
+    <li><strong>nopic:</strong> complete articles without pictures, much smaller.</li>
+    <li><strong>mini:</strong> the beginning of each article only, the smallest.</li>
+  </ul>
+  <p>There are also smaller selections of articles and subject books, such as one on knots of about 14 MB. An iPhone holds a selection or a nopic edition comfortably; for the Apple Watch, pick a small book.</p>
+
+  <h2 id="search">Search</h2>
+  <ul>
+    <li><strong>Titles:</strong> type in the search field and Galileus suggests article titles as you type, including the other names an article goes by. While you read a book, the search covers that book; otherwise it covers all your books.</li>
+    <li><strong>Inside the articles:</strong> press Return, or choose Search inside articles, to list every article that contains all your words, with an extract around them. Galileus uses the search index stored in the book, so this works offline.</li>
+    <li>In English books, search also finds other forms of your words, such as knot and knots. In other languages it finds the words as you type them and most plurals.</li>
+    <li>A book without a search index can still be searched by title.</li>
+  </ul>
+  <h3>Reading</h3>
+  <p>The reader's toolbar has Back, Forward, Main Page, Random Article and Bookmark. Find in Page and the text size are in the toolbar's overflow menu on iPhone and iPad, and in the More menu on a Mac. Links to other articles of the book open in Galileus; web links open in your browser.</p>
+
+  <h2 id="watch">Apple Watch</h2>
+  <div class="card">
+    <ol>
+      <li>Install Galileus on your Apple Watch (it comes with the iPhone app).</li>
+      <li>On your iPhone, open <strong>My Books</strong>, touch and hold a book, then choose <strong>Send to Apple Watch</strong>.</li>
+      <li>The system sends the file to the watch over Bluetooth or Wi-Fi, even if you close Galileus. A large book can take a long time: Galileus asks before sending a book of 1 GB or more.</li>
+      <li>On the watch, open Galileus and choose the book. Search its titles, open its main page or a random article.</li>
+    </ol>
+  </div>
+  <p>On the watch, articles appear as text, with links to related articles. Very long articles are shortened; the full article is on your iPhone. The watch keeps its own copy of each book and reads it offline.</p>
+
+  <h2 id="storage">Storage</h2>
+  <ul>
+    <li><strong>iPhone and iPad:</strong> books from the catalog are saved in Galileus's folder, shown in the Files app under On My iPhone (or On My iPad) &gt; Galileus. They are kept out of iCloud and computer backups, since they are large and can be downloaded again.</li>
+    <li><strong>An external drive:</strong> on a Mac or an iPad, open Settings, then in Storage choose <strong>Choose Folder</strong> and pick a folder on the drive. New downloads go there. <strong>Use Default</strong> goes back to Galileus's own folder.</li>
+    <li>Settings shows the free space of the download folder, and the number of books and their total size.</li>
+    <li>If a book shows <strong>File not found</strong>, its drive is unplugged or the file was moved. Reconnect the drive, then touch and hold the book (on a Mac, Control-click it) and choose Try Again.</li>
+  </ul>
+
+  <h2 id="faq">Questions</h2>
+
+  <h3>Do I need an internet connection?</h3>
+  <p>Only to browse the catalog and to download books. Reading, searching, bookmarks and history work offline.</p>
+
+  <h3>Do I need an account?</h3>
+  <p>No. Galileus has no account and no sign-in.</p>
+
+  <h3>Is Galileus made by Wikipedia?</h3>
+  <p>No. Galileus is an independent app made by Artiros. The books are made and published by third parties from sources such as Wikipedia, each under its own license. Wikipedia is a trademark of the Wikimedia Foundation; Galileus is not made or endorsed by the Wikimedia Foundation.</p>
+
+  <h3>Why is an article out of date?</h3>
+  <p>Each book is a copy of its source made on a given date. New editions appear in the catalog regularly: download the newer one, then delete the old one in My Books.</p>
+
+  <h3>I found a mistake in an article. Who do I tell?</h3>
+  <p>Galileus shows the books exactly as they are published. A mistake in an article comes from its source: for Wikipedia, it can be corrected on Wikipedia itself, and later editions of the book will include the change. For a problem with Galileus, write to us (below).</p>
+
+  <h3>Does my library sync between my iPhone, iPad and Mac?</h3>
+  <p>No. Each device keeps its own books, bookmarks and history. Books can be large, so you choose on each device which ones to keep.</p>
+
+  <h3>How do I remove a book?</h3>
+  <p>In My Books, touch and hold the book (on a Mac, Control-click it), then choose Remove from Library to keep the file, or Delete File to delete a book kept in Galileus's download folder.</p>
+
+  <h3>What data does Galileus collect?</h3>
+  <p>None. See the <a href="privacy.html">privacy policy</a>.</p>
+
+  <h2 id="contact">Contact</h2>
+  <p>Write to <a href="mailto:support.artiros@icloud.com">support.artiros@icloud.com</a>. For a quick answer, include your device (iPhone, iPad, Mac or Apple Watch), its system version, the version of Galileus (shown in Settings, under About), the book concerned and the steps that lead to the problem.</p>
+
+  <footer class="muted">
+    <a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a>
+    <p>Galileus by Artiros.</p>
+  </footer>
+</main>
+</body>
+</html>
