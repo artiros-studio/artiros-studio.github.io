@@ -82,7 +82,8 @@
       <li>Galileus collects no data about you.</li>
       <li>No account, no ads, no analytics, no tracking.</li>
       <li>Your books, bookmarks and reading history stay on your device.</li>
-      <li>Galileus goes online only to show the online catalog of ZIM books and to download the books you choose.</li>
+      <li>Galileus goes online only to show the online catalog of ZIM books, to download the books you choose, and, if you choose Private Cloud Compute for Galileo the Wise, to send your question to Apple.</li>
+      <li>Galileo the Wise answers on your device unless you choose Private Cloud Compute.</li>
     </ul>
   </div>
 
@@ -96,13 +97,18 @@
   </ul>
   <p>Articles, their pictures and the search index are read from the book files on your device. Reading and searching work without an internet connection, and Galileus blocks any request a book's page would make to the web. Galileus has no server of its own, and none of this is sent to Artiros or to anyone else. Nothing is synced between your devices: each one keeps its own library.</p>
 
+  <h2>Galileo the Wise</h2>
+  <p>Galileo the Wise answers your questions about your books with Apple Intelligence. By default he works on your device, with Apple's on-device model: your questions, the article extracts he reads and his answers stay on your device, and he works without an internet connection. The conversation is kept only while the window is open; it is not saved, and it is never sent to Artiros.</p>
+  <p>On devices where Apple offers it, you can choose Private Cloud Compute instead of On Device, beside Deep Search. On Device is selected again each time Galileus opens. With Private Cloud Compute, for each question you ask, Galileus sends Apple's Private Cloud Compute servers your question, the article extracts it took from your books to answer it, and the conversation so far (the latest questions and answers, or a short summary of them). Apple's larger model writes the answer and sends it back. Apple states that Private Cloud Compute uses this data only to fulfill your request, keeps none of it once the answer is returned, and never makes it available to Apple (<a href="https://security.apple.com/blog/private-cloud-compute/">Apple Security Research: Private Cloud Compute</a>). Galileus sends nothing to Artiros. Private Cloud Compute needs an internet connection, and Apple limits how much it can be used each day. Every answer says whether it was written on your device or with Private Cloud Compute.</p>
+
   <h2>When Galileus goes online</h2>
-  <p>Galileus connects to the internet for two things only, both started by you:</p>
+  <p>Galileus connects to the internet for these things only, all started by you:</p>
   <ul>
     <li><strong>The catalog.</strong> When you open the Catalog, Galileus asks the public catalog server for ZIM books for the list of books and their small cover pictures, with the language, category and search words you chose there.</li>
     <li><strong>Downloads.</strong> When you tap Get, the book is downloaded from the download servers of the public catalog server for ZIM books, which may pass the download to a mirror run by another organization, such as a university.</li>
+    <li><strong>Private Cloud Compute.</strong> Only if you choose it for Galileo the Wise, as described above. These requests go to Apple, not to Artiros.</li>
   </ul>
-  <p>These requests contain only what any web request does. They carry no account, no identifier and nothing from your library, bookmarks or history. Like any web request, they reach those servers from your device's internet address, and the operators of the catalog and of the mirrors handle them under their own policies. They are independent of Artiros, which receives nothing from these requests.</p>
+  <p>The catalog and download requests contain only what any web request does. They carry no account, no identifier and nothing from your library, bookmarks or history. Like any web request, they reach those servers from your device's internet address, and the operators of the catalog and of the mirrors handle them under their own policies. They are independent of Artiros, which receives nothing from these requests.</p>
   <p>Web links in an article open in your default web browser, outside Galileus. What happens there is governed by your browser and by the website you visit.</p>
 
   <h2>Apple Watch</h2>
